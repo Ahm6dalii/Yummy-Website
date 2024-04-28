@@ -150,5 +150,11 @@ form .form-control:focus{
 }
 form{
     height: calc(100vh - 32px);
+    width: 75%;
+}
+@media(max-width:600px){
+    form{
+        width: 100% !important;
+    }
 }
 /* ?---End contact Us*/

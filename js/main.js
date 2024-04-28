@@ -437,7 +437,8 @@ if(nameStutes &&emailStutes&&phoneStutes&&ageStutes&&passStutes&&rePassStutes
  
 function displayConctUsBody(){
     let searchContainer=`
-    <form  class=" d-flex flex-column justify-content-center row-gap-3 align-items-center" id="contactForm">
+    <div class=" d-flex align-items-center justify-content-center">
+    <form  class=" d-flex flex-column justify-content-center row-gap-3 align-items-center " id="contactForm">
     <div class=" d-flex align-items-center">
         <i class="fa-solid fa-envelope fa-3x me-2 " style="color:#c4b294"></i>
         <h2 class="h1 text-white d-inline-block mb-0" >Contact Us</h2>             
@@ -475,6 +476,7 @@ function displayConctUsBody(){
         <button type='button' class="position-fixed mainPage-btn btn fw-bolder" onclick="location.reload()" >Home</button>
 
 </form>
+</div>
     `
     $('#dataContainer').html(searchContainer);
     $('#nav-menu').animate({left:`-${menuWidth}px`},500)
