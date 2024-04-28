@@ -69,14 +69,14 @@ let cartona='';
 for(let i=0 ;i<categories.length;i++)
 {
 cartona+=`
-<div class="col-md-6 col-lg-4">
+<div class="col-md-6 col-lg-4" onclick="getMealsByCatogery('${categories[i].strCategory}')">
                    
 <div class="inner position-relative border border-2 rounded-3">
     
         <img src="${categories[i].strCategoryThumb
             }" class="w-100 object-fit-cover" alt="">
    
-    <div class=" w-100 d-flex justify-content-center align-items-center  fw-bold position-absolute" onclick="getMealsByCatogery('${categories[i].strCategory}')">
+    <div class=" w-100 d-flex justify-content-center align-items-center  fw-bold position-absolute" >
         ${categories[i].strCategory }
        </div>
 
@@ -93,11 +93,11 @@ function displayInnerData(mealsName){
     for(let i=0 ;i<mealsName.length;i++)
     {
     cartona+=`
-    <div class="col-md-6 col-lg-4">                  
+    <div class="col-md-6 col-lg-4" onclick="dataById(${mealsName[i].idMeal})">                  
     <div class="inner position-relative border border-2 rounded-3">   
             <img src="${mealsName[i].strMealThumb
                 }" class="w-100 object-fit-cover" alt="">
-        <div class=" w-100 d-flex justify-content-center align-items-center  fw-bold position-absolute" onclick="dataById(${mealsName[i].idMeal})">
+        <div class=" w-100 d-flex justify-content-center align-items-center  fw-bold position-absolute" >
             ${mealsName[i].strMeal.split(" ").slice(0,4).join(" ")}
            </div>
     </div>
@@ -319,10 +319,10 @@ function displaySearchData(data){
     for(let i=0 ;i<data.length;i++)
     {
     cartona+=`
-    <div class="col-md-6 col-lg-4 col-xl-3">                   
+    <div class="col-md-6 col-lg-4 col-xl-3" onclick="dataById(${data[i].idMeal})">                   
     <div class="inner position-relative border border-2 rounded-3" >
             <img src="${data[i].strMealThumb}" class="w-100 object-fit-cover" alt="">
-        <div class="dataDetials p-3 w-100 d-flex justify-content-center align-items-center fw-bold position-absolute" onclick="dataById(${data[i].idMeal})" >
+        <div class="dataDetials p-3 w-100 d-flex justify-content-center align-items-center fw-bold position-absolute"  >
             ${data[i].strMeal }
            </div>
     </div>
