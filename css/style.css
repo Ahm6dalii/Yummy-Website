@@ -1,0 +1,154 @@
+
+*{
+box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+}
+/* ! Start Nav */
+.links{
+    background-color: #786d5a;
+    width: 250px;
+}
+.menu{
+    width: 40px;
+    background-color: #e6e6e6;
+}
+#menu-icon , #menu-icon+div > i{
+    cursor: pointer;
+}
+nav ul li{
+    position: relative;
+    overflow: hidden;
+    top:300px
+}
+/* ! End Nav */
+
+/* &Start header  */
+header{
+    background-color: #484136;
+    padding-left:40px;
+}
+/* &End header */
+
+/* ^Start loader */
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    animation: pulse 1s linear infinite;
+  }
+  .loader:after {
+    content: '';
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: scaleUp 1s linear infinite;
+  }
+  @keyframes scaleUp {
+    0% { transform: translate(-50%, -50%) scale(0) }
+    60% , 100% { transform: translate(-50%, -50%)  scale(1)}
+  }
+  @keyframes pulse {
+    0% , 60% , 100%{ transform:  scale(1) }
+    80% { transform:  scale(1.2)}
+  }
+  /*^End loader */
+
+  /* todo---Start boxes caintainer */
+  .inner{
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .inner > div{
+    transition: 500ms all;
+    bottom: 0px;
+    height: 0px;
+    opacity: 0;
+    visibility: hidden;
+  }
+.inner:hover  > div{
+   height: 100%;
+   opacity: 1;
+   visibility:visible;
+   background-color: rgba(167, 152, 126, .8);
+}
+/* todo---End boxes caintainer */
+
+/* *---Start Search Input */
+.search .form-control{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #e6e6e6;
+}
+.search .form-control:focus{
+    box-shadow: none;
+}
+.search ::placeholder{
+    color: #e6e6e6;
+}
+/* *---End Search Input */
+
+/* ~---Start Custom buttons */
+.btn-main {
+    --bs-btn-color: #786d5a;
+    --bs-btn-bg: #d2c7c7;
+    --bs-btn-border-color: #e6e6e6;
+    --bs-btn-hover-color: #e6e6e6;
+    --bs-btn-hover-bg: #786d5a;
+    --bs-btn-hover-border-color: #e6e6e6;
+}
+
+.btn-outline-main{
+    --bs-btn-color: #e6e6e6;
+    --bs-btn-bg:#786d5a;
+    --bs-btn-border-color:#e6e6e6 ;
+    --bs-btn-hover-color: #786d5a;
+    --bs-btn-hover-bg: #d2c7c7;
+    --bs-btn-hover-border-color: #786d5a;
+}
+
+.mainPage-btn{
+ right: 20px;
+ bottom: 20px;   
+ height: 50px;
+ background-color: #786d5a;
+ --bs-btn-hover-border-color:#d2c7c7;
+ --bs-btn-hover-color:#d2c7c7;
+}
+
+.btn-outline-submit{
+    --bs-btn-color: #e6e6e6;
+    --bs-btn-bg:#786d5a;
+    --bs-btn-border-color:#e6e6e6 ;
+    --bs-btn-hover-color: #786d5a;
+    --bs-btn-hover-bg: #c4b294;
+    --bs-btn-hover-border-color: #786d5a;
+}
+/* ~---End Custom buttons */
+
+/* ?---Start contact Us*/
+#contactForm > div{
+background-color: #786d5a72;
+padding: 20px;
+border-radius: 20px;
+box-shadow: 0 0 5px 0px #bea06b ;
+}
+form .form-control:focus{
+    box-shadow: 0 0 0 .25rem rgb(226 202 53 / 29%);
+}
+form{
+    height: 100%-16px;
+}
+/* ?---End contact Us*/

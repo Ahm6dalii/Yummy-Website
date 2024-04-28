@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./image/logo.png" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Yummyy</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Media -->
+    <link rel="stylesheet" href="./css/media.css" />
+  </head>
+  <body>
+    <!-- ^=================Start Loading Page ================== -->
+    <div
+      class="bg-black d-flex justify-content-center align-items-center z-3 position-fixed w-100 vh-100"
+      id="loader"
+    >
+      <span class="loader"></span>
+    </div>
+    <!-- ^=================End Loading Page ================== -->
+    <!-- &================= Start Nav ================== -->
+    <nav class="bg-primary d-inline-block position-fixed z-1" id="nav-menu">
+      <div class="d-flex" >
+        <div
+          class="links d-flex flex-column justify-content-between text-white vh-100"
+          id="links"
+        >
+          <ul class="list-unstyled mt-3">
+            <li class="ps-3 py-2">
+              <a href="#" class="nav-link" id="Search"
+                >Search</a
+              >
+            </li>
+            <li class="ps-3 py-2 ">
+              <a href="#" class="nav-link" id="categories"
+                >Categories</a
+              >
+            </li>
+            <li class="ps-3 py-2"><a href="#"  id="area" class="nav-link">Area</a></li>
+            <li class="ps-3 py-2">
+              <a href="#" class="nav-link" id="ingrediant">Ingredients</a>
+            </li>
+            <li class="ps-3 py-2">
+              <a href="#" class="nav-link" id="contactUs">Contact Us</a>
+            </li>
+          </ul>
+          <div class="menu-footer px-3 pb-3">
+            <div class="social d-flex gap-1">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-solid fa-globe d-block"></i>
+            </div>
+            <div>
+              <p>Copyright Â &copy; 2019 All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="menu vh-100 d-flex flex-column justify-content-between align-items-center"
+        >
+          <div class="img pt-3 px-1">
+            <img src="./image/logo.png" class="w-100" alt="" />
+          </div>
+
+          <div class="menu-icon" id="menu-icon">
+            <i class="fa-solid fa-bars fa-2xl" id="icons"></i>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-globe d-block"></i>
+            <i class="fa-solid fa-share-nodes"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- &================= End Nav ================== -->
+
+    <!-- !================= Start Header ================== -->
+    <header class="min-vh-100">
+      <div class="container">
+        <div class="row py-3 row-gap-3 " id="dataContainer">
+           
+        </div>
+      </div>
+    </header>
+    <!--!================= End Header ================== -->
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
