@@ -66,6 +66,7 @@ async function getMealsByCatogery(catogeryName){
 function displayCatogery(categories){
 let container=$('dataContainer');
 let cartona='';
+console.log(categories)
 for(let i=0 ;i<categories.length;i++)
 {
 cartona+=`
@@ -76,10 +77,14 @@ cartona+=`
         <img src="${categories[i].strCategoryThumb
             }" class="w-100 object-fit-cover" alt="">
    
-    <div class=" w-100 d-flex justify-content-center align-items-center  fw-bold position-absolute" >
-        ${categories[i].strCategory }
+    <div class=" w-100 d-flex  flex-column justify-content-center align-items-center   position-absolute" >
+    <div class=" h2 " >    ${categories[i].strCategory }</div>
+        <div class=" px-2 fs-5" >
+        ${categories[i].strCategoryDescription.split(" ").slice(0,20).join(" ")}
        </div>
 
+       </div>
+    
 </div>
 </div>
 `
@@ -90,6 +95,7 @@ $('#dataContainer').html(cartona);
 
 function displayInnerData(mealsName){
     let cartona='';
+    console.log(mealsName)
     for(let i=0 ;i<mealsName.length;i++)
     {
     cartona+=`
@@ -189,7 +195,7 @@ function displayDetials(meals){
   <div class="col-md-8 text-white">
     <h2 class="mb-2 text-white">Instructions</h2>
     <p class="lead text-white ">
-    ${meals[0].strInstructions.split(" ").slice(0,25).join(" ")}
+    ${meals[0].strInstructions}
     </p>
     <p class="fs-2 mb-0"><span class="fw-bolder">Area :</span> ${meals[0].strArea}</p>
     <p class="fs-2 mb-0"><span class="fw-bolder">Category :</span> ${meals[0].strCategory}</p>

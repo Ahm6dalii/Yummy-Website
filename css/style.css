@@ -92,6 +92,7 @@ background-color: #bea06b;
 /* *---Start Search Input */
 .search .form-control{
     background-color: transparent;
+    color: #fff;
     border: 0;
     border-bottom: 2px solid #e6e6e6;
 }
